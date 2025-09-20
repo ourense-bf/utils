@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brooklyn Fitboxing Ourense — Enlaces</title>
+  <meta name="description" content="Todos los enlaces útiles de Brooklyn Fitboxing Ourense: horario, canal de WhatsApp, reseñas, Weboffer e Instagram de Adri." />
+  <meta property="og:title" content="Brooklyn Fitboxing Ourense — Enlaces" />
+  <meta property="og:description" content="Accede rápido: horario, WhatsApp, reseñas, Weboffer e Instagram de Adri." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#ffd000" />
+
+  <!-- Tailwind CDN config (colores coherentes con el horario trabajado: negro + amarillo Brooklyn) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bk: {
+              yellow: '#FFD000',
+              yellowSoft: '#FFE257',
+              dark: '#0A0A0A',
+              darkSoft: '#141414',
+              gray: '#9CA3AF'
+            }
+          },
+          dropShadow: {
+            glow: ['0 0 20px rgba(255,208,0,0.35)']
+          },
+          boxShadow: {
+            insetGlow: 'inset 0 0 0 1px rgba(255,208,0,0.25), 0 10px 30px rgba(0,0,0,0.6)'
+          },
+          fontFamily: {
+            inter: ['Inter', 'system-ui', 'ui-sans-serif', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* Textura sutil tipo noise para fondo */
+    .noise {
+      position: fixed; inset: 0; pointer-events: none; opacity: .06; mix-blend-mode: overlay;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'160\' height=\'160\'><filter id=\'n\'><feTurbulence type=\'fractalNoise\' baseFrequency=\'0.8\' numOctaves=\'2\'/></filter><rect width=\'100%\' height=\'100%\' filter=\'url(%23n)\' opacity=\'0.65\'/></svg>');
+      background-size: 320px 320px;
+    }
+    /* Placeholder QR: borde discontinuo y texto centrado */
+    .qr-placeholder { border: 2px dashed rgba(255,208,0,.4); }
+  </style>
+</head>
+<body class="bg-bk-dark text-white font-inter min-h-screen">
+  <div class="noise"></div>
+  <!-- Aura amarilla superior -->
+  <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[720px] h-[720px] blur-3xl rounded-full opacity-20 bg-bk-yellow pointer-events-none"></div>
+
+  <main class="relative z-10 max-w-4xl mx-auto px-6 py-10">
+    <!-- Header / Marca -->
+    <header class="flex flex-col items-center text-center gap-3">
+      <div class="px-4 py-1 rounded-full bg-bk-darkSoft/60 ring-1 ring-white/10 text-bk-gray text-xs tracking-wide">Brooklyn Fitboxing Ourense</div>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-glow">
+        Tus enlaces rápidos
+      </h1>
+      <p class="text-bk-gray max-w-2xl">Entrena fuerte, golpea con ritmo y encuentra todo lo que necesitas en un solo sitio.</p>
+    </header>
+
+    <!-- Grid de tarjetas con botón + QR -->
+    <section class="mt-10 grid sm:grid-cols-2 gap-5">
+      <!-- CARD: Horario -->
+      <article class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-bk-darkSoft to-black p-5 ring-1 ring-white/10 shadow-insetGlow">
+        <div class="flex items-start gap-5">
+          <div class="flex-1">
+            <h2 class="text-xl font-bold mb-1">📅 Horario</h2>
+            <p class="text-sm text-bk-gray mb-4">Consulta el calendario actualizado de clases y reserva tu sesión.</p>
+            <a data-link="horario" href="https://ourense-bf.github.io/utils/horario.html" target="_blank" class="inline-flex items-center justify-center px-4 py-2 rounded-xl bg-bk-yellow text-black font-semibold transition hover:drop-shadow-glow hover:bg-bk-yellowSoft active:scale-[.99]">Abrir</a>
+          </div>
+          <!-- QR placeholder / sustituye el src por tu imagen QR -->
+          <figure class="w-28 h-28 shrink-0 rounded-xl qr-placeholder grid place-items-center bg-black/40">
+            <img src="qr-horario.png" alt="QR Horario" class="w-full h-full object-contain hidden" />
+            <figcaption class="text-[11px] text-bk-gray text-center px-2">Coloca aquí <br> el QR del horario</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <!-- CARD: Canal de difusión WhatsApp -->
+      <article class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-bk-darkSoft to-black p-5 ring-1 ring-white/10 shadow-insetGlow">
+        <div class="flex items-start gap-5">
+          <div class="flex-1">
+            <h2 class="text-xl font-bold mb-1">📢 Canal de difusión WhatsApp</h2>
+            <p class="text-sm text-bk-gray mb-4">Apúntate para recibir avisos, novedades y cambios de última hora.</p>
+            <a data-link="whatsapp" href="https://whatsapp.com/channel/0029VbAPoez1noyzUomZZP0u" target="_blank" class="inline-flex items-center justify-center px-4 py-2 rounded-xl bg-bk-yellow text-black font-semibold transition hover:drop-shadow-glow hover:bg-bk-yellowSoft active:scale-[.99]">Unirme</a>
+          </div>
+          <figure class="w-28 h-28 shrink-0 rounded-xl qr-placeholder grid place-items-center bg-black/40">
+            <img src="qr-whatsapp.png" alt="QR WhatsApp" class="w-full h-full object-contain hidden" />
+            <figcaption class="text-[11px] text-bk-gray text-center px-2">Coloca aquí <br> el QR del canal</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <!-- CARD: Reseñas -->
+      <article class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-bk-darkSoft to-black p-5 ring-1 ring-white/10 shadow-insetGlow">
+        <div class="flex items-start gap-5">
+          <div class="flex-1">
+            <h2 class="text-xl font-bold mb-1">⭐ Reseñas</h2>
+            <p class="text-sm text-bk-gray mb-4">Cuéntanos tu experiencia y ayuda a más gente a descubrir el club.</p>
+            <a data-link="resenas" href="https://g.page/r/CfHBns-oapWaEAE/review" target="_blank" class="inline-flex items-center justify-center px-4 py-2 rounded-xl bg-bk-yellow text-black font-semibold transition hover:drop-shadow-glow hover:bg-bk-yellowSoft active:scale-[.99]">Dejar reseña</a>
+          </div>
+          <figure class="w-28 h-28 shrink-0 rounded-xl qr-placeholder grid place-items-center bg-black/40">
+            <img src="qr-resenas.png" alt="QR Reseñas" class="w-full h-full object-contain hidden" />
+            <figcaption class="text-[11px] text-bk-gray text-center px-2">Coloca aquí <br> el QR de reseñas</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <!-- CARD: Comprar Weboffer -->
+      <article class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-bk-darkSoft to-black p-5 ring-1 ring-white/10 shadow-insetGlow">
+        <div class="flex items-start gap-5">
+          <div class="flex-1">
+            <h2 class="text-xl font-bold mb-1">🔥 Comprar Weboffer</h2>
+            <p class="text-sm text-bk-gray mb-4">Empieza hoy. Oferta web para nuevos fitboxers en Ourense.</p>
+            <a data-link="weboffer" href="https://www.brooklynfitboxing.com/public/es/es-es/checkout/OURENSE" target="_blank" class="inline-flex items-center justify-center px-4 py-2 rounded-xl bg-bk-yellow text-black font-semibold transition hover:drop-shadow-glow hover:bg-bk-yellowSoft active:scale-[.99]">Comprar</a>
+          </div>
+          <figure class="w-28 h-28 shrink-0 rounded-xl qr-placeholder grid place-items-center bg-black/40">
+            <img src="qr-weboffer.png" alt="QR Weboffer" class="w-full h-full object-contain hidden" />
+            <figcaption class="text-[11px] text-bk-gray text-center px-2">Coloca aquí <br> el QR de Weboffer</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <!-- CARD: Instagram Adri -->
+      <article class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-bk-darkSoft to-black p-5 ring-1 ring-white/10 shadow-insetGlow">
+        <div class="flex items-start gap-5">
+          <div class="flex-1">
+            <h2 class="text-xl font-bold mb-1">📸 Instagram Adri</h2>
+            <p class="text-sm text-bk-gray mb-4">Sigue a Adri para ver tips, combos y vida fitboxer.</p>
+            <a data-link="instagramAdri" href="#" target="_blank" class="inline-flex items-center justify-center px-4 py-2 rounded-xl bg-bk-yellow text-black font-semibold transition hover:drop-shadow-glow hover:bg-bk-yellowSoft active:scale-[.99]">Ver perfil</a>
+          </div>
+          <figure class="w-28 h-28 shrink-0 rounded-xl qr-placeholder grid place-items-center bg-black/40">
+            <img src="qr-instagram-adri.png" alt="QR Instagram Adri" class="w-full h-full object-contain hidden" />
+            <figcaption class="text-[11px] text-bk-gray text-center px-2">Coloca aquí <br> el QR de Instagram</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <!-- CARD: Instagram Rebe -->
+      <article class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-bk-darkSoft to-black p-5 ring-1 ring-white/10 shadow-insetGlow">
+        <div class="flex items-start gap-5">
+          <div class="flex-1">
+            <h2 class="text-xl font-bold mb-1">📸 Instagram Rebe</h2>
+            <p class="text-sm text-bk-gray mb-4">Sigue a Rebe para ver vida fitboxer y voleibolista.</p>
+            <a data-link="instagramAdri" href="#" target="_blank" class="inline-flex items-center justify-center px-4 py-2 rounded-xl bg-bk-yellow text-black font-semibold transition hover:drop-shadow-glow hover:bg-bk-yellowSoft active:scale-[.99]">Ver perfil</a>
+          </div>
+          <figure class="w-28 h-28 shrink-0 rounded-xl qr-placeholder grid place-items-center bg-black/40">
+            <img src="qr-instagram-adri.png" alt="QR Instagram Adri" class="w-full h-full object-contain hidden" />
+            <figcaption class="text-[11px] text-bk-gray text-center px-2">Coloca aquí <br> el QR de Instagram</figcaption>
+          </figure>
+        </div>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-10 flex flex-col items-center gap-2 text-center">
+      <div class="h-px w-24 bg-white/10"></div>
+      <p class="text-xs text-bk-gray">Hecho con 💛, ritmo y sudor en Ourense</p>
+    </footer>
+  </main>
+
+  <!-- Script: punto único para configurar URLs sin tocar el HTML -->
+  <script>
+    // Sustituye estos valores por tus enlaces reales
+    const LINKS = {
+      horario: 'TU_URL_HORARIO',
+      whatsapp: 'TU_URL_CANAL_WHATSAPP',
+      resenas: 'TU_URL_RESEÑAS',
+      weboffer: 'TU_URL_WEBOFFER',
+      instagramAdri: 'https://instagram.com/TU_USUARIO_ADRI'
+    };
+
+    document.querySelectorAll('[data-link]').forEach(el => {
+      const key = el.getAttribute('data-link');
+      if (LINKS[key]) el.setAttribute('href', LINKS[key]);
+    });
+  </script>
+</body>
+</html>
