@@ -69,51 +69,47 @@
     // --- Configuración simple para editar a mano ---
     // Pon aquí los inicios de clase (HH:MM). Cada bloque ocupa 1 hora (2 celdas de 30').
     const aida = {name: 'Aida', bg: "#fff", fg: "#000" }
-    const dante = {name: 'Dante', bg: "#aaa", fg: "#fff" }
-    const adri = {name: 'Adri', bg: "#000", fg: "#fff" }
+    const dante = {name: 'Dante', bg: "#000", fg: "#fff" }    
     const rebe = {name: 'Rebe', bg: "#F80000", fg: "#fff" }
     const trainer = {name: 'Trainer', bg: "#F80000", fg: "#fff" }
     const clases = {
-      "Lunes": [
-        { time: "07:00", trainers: [aida] },
-        { time: "08:00", trainers: [aida] },
+      "Lunes": [        
         { time: "09:30", trainers: [aida] },
-        { time: "13:30", trainers: [dante] },
+        { time: "12:00", trainers: [aida] },
         { time: "17:30", trainers: [trainer] },
         { time: "19:30", trainers: [trainer] },
-        { time: "21:00", trainers: [adri] },
+        { time: "20:30", trainers: [trainer] },
+        { time: "21:00", trainers: [dante] }
       ],
       "Martes": [
         { time: "09:30", trainers: [dante] },
         { time: "10:30", trainers: [dante] },
-        { time: "14:30", trainers: [adri] },
+        { time: "14:30", trainers: [aida] },
         { time: "18:00", trainers: [trainer] },
         { time: "19:00", trainers: [trainer] },
         { time: "20:00", trainers: [trainer] },
-        { time: "21:30", trainers: [trainer] },
+        { time: "21:30", trainers: [dante] },
       ],
       "Miércoles": [
-        { time: "07:00", trainers: [aida] },
-        { time: "08:00", trainers: [aida] },
         { time: "09:30", trainers: [aida] },
-        { time: "13:30", trainers: [dante] },
+        { time: "12:00", trainers: [aida] },
         { time: "17:30", trainers: [trainer] },
         { time: "19:30", trainers: [trainer] },
-        { time: "21:00", trainers: [adri] },
+        { time: "20:30", trainers: [trainer] },
+        { time: "21:00", trainers: [dante] }
       ],
       "Jueves": [
         { time: "09:30", trainers: [dante] },
         { time: "10:30", trainers: [dante] },
-        { time: "14:30", trainers: [adri] },
+        { time: "14:30", trainers: [aida] },
         { time: "18:00", trainers: [trainer] },
         { time: "19:00", trainers: [trainer] },
         { time: "20:00", trainers: [trainer] },
-        { time: "21:30", trainers: [trainer] },
+        { time: "21:30", trainers: [dante] },
       ],
       "Viernes": [
-        { time: "11:00", trainers: [aida] },
-        { time: "15:30", trainers: [adri] },
-        { time: "17:30", trainers: [rebe] },
+        { time: "10:00", trainers: [aida] },
+        { time: "11:00", trainers: [aida] },        
         { time: "18:30", trainers: [rebe] },
       ],
       "Sábado": [
@@ -121,8 +117,8 @@
         { time: "11:00", trainers: [rebe, dante] },
       ],
       "Domingo": [
-        { time: "10:00", trainers: [rebe, dante] },
         { time: "11:00", trainers: [rebe, dante] },
+        { time: "12:00", trainers: [rebe, dante] },
       ],
     };
 
